@@ -48,5 +48,9 @@ class apache {
   file { '/var/www/html/index.html':
     ensure => file,
     source => 'puppet:///modules/apache/index.html',
+    notify => Service["apache2"]
+  }
+  service { 'apache2':
+    ensure => running,
   }
 }
