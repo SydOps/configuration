@@ -1,0 +1,10 @@
+source :rubygems
+
+gem "rake"
+gem "aws-sdk"
+gem "colorize"
+gem "rspec"
+gem "jruby-openssl", :platform => "jruby"
+gem "puppet"
+gem "nokogiri"
+gem "excon"
